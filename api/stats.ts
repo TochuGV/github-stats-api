@@ -31,11 +31,11 @@ export default async function handler() {
         ${streakSvg}
       </g>
       
-      <g transform="translate(0, 210)">
+      <g transform="translate(5, 210)">
         ${statsSvg}
       </g>
       
-      <g transform="translate(510, 45)">
+      <g transform="translate(510, 30)">
         ${langsSvg}
       </g>
 
