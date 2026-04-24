@@ -46,7 +46,7 @@ export default async function handler() {
     status: 200,
     headers: {
       'Content-Type': 'image/svg+xml',
-      'Cache-Control': 'public, max-age=7200, s-maxage=7200'
+      'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=2592000'
     }
   })
 }
