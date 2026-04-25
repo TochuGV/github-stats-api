@@ -13,6 +13,12 @@ export default async function handler() {
   const statsSvg = await statsRes.text()
   const langsSvg = await langsRes.text()
 
+  const svgs = [streakSvg, statsSvg, langsSvg];
+
+  if (svgs.some(svg => svg.includes('Something went wrong'))) {
+    return new Response('External API error', { status: 500 })
+  }  
+
   const finalSvg = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 375" width="100%">
       
