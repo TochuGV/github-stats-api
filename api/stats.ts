@@ -5,8 +5,8 @@ export const config = {
 export default async function handler() {
   const [streakRes, statsRes, langsRes] = await Promise.all([
     fetch(`https://github-readme-streak-stats.herokuapp.com?user=TochuGV&theme=github-dark-dimmed&hide_border=true&date_format=j%2Fn%5B%2FY%5D&background=transparent`),
-    fetch(`https://github-readme-stats.vercel.app/api?username=TochuGV&theme=github_dark_dimmed&hide_border=true&hide_title=true&include_all_commits=true&count_private=true&show_icons=true&bg_color=00000000&card_width=495`),
-    fetch(`https://github-readme-stats.vercel.app/api/top-langs/?username=TochuGV&theme=github_dark_dimmed&hide_border=true&hide_title=true&layout=donut-vertical&bg_color=00000000`)
+    fetch(`https://github-readme-stats-mu-brown-57.vercel.app/api?username=TochuGV&theme=github_dark_dimmed&hide_border=true&hide_title=true&include_all_commits=true&count_private=true&show_icons=true&bg_color=00000000&card_width=495`),
+    fetch(`https://github-readme-stats-mu-brown-57.vercel.app/api/top-langs/?username=TochuGV&theme=github_dark_dimmed&hide_border=true&hide_title=true&layout=donut-vertical&bg_color=00000000`)
   ])
 
   const streakSvg = await streakRes.text()
