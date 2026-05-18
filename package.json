@@ -10,6 +10,10 @@
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "5"
+  },
+  "dependencies": {
+    "@upstash/redis": "1.38.0",
+    "vercel": "54.1.0"
   }
 }
